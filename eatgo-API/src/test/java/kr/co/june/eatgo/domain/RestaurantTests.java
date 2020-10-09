@@ -11,16 +11,16 @@ public class RestaurantTests {
 
     @Test
     public void craetion() throws Exception {
-        Restaurant restaurant = new Restaurant("Bob1", "fnffn0607@naver.com");
-        //assertThat(restaurant.getName(), is("Bob1"));
-        assertThat(restaurant.getEmail(), is("fnffn0607@naver.com"));
+        Restaurant restaurant = new Restaurant("Bob1", "Seoul");
+        assertThat(restaurant.getName(), is("Bob1"));
+        //assertThat(restaurant.getEmail(), is(""));
+        assertThat(restaurant.getAddress(), is("Seoul"));
     }
 
     @Test
     public void information() {
-        Restaurant RestaurantInformation = new Restaurant("Bob zip", "seoul");
-        //assertThat(restaurant2.getInformation(), "Bob zip in seoul");
-        assertThat(RestaurantInformation.getInformation(), is("Bob zip in seoul"));
+        Restaurant RestaurantInformation = new Restaurant("Bob zip", "Seoul");
+        assertThat(RestaurantInformation.getInformation(), is("Bob zip in Seoul"));
     }
 
     /*
