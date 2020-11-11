@@ -36,6 +36,12 @@ public class RestaurantService {
         return restaurant;
     }
 
+    public Restaurant addRestaurant(Restaurant restaurant) {
+        /*restaurant.setId(1234L);
+        return new Restaurant(1234L, restaurant.getName(), restaurant.getAddress());*/
+        return restaurantRepository.save(restaurant);
+    }
+
     /*public Restaurant getRestaurantById(Long id) {
 
 
