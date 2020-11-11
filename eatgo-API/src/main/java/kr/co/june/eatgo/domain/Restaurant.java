@@ -6,11 +6,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Restaurant {
-    private final long id;
-    private final String name;
-    private final String address;
+    private long id;
+    private String name;
+    private String address;
     private List<MenuItem> menuItems = new ArrayList<>();
 
+    public Restaurant() {
+    }
+
+    public Restaurant(String name, String address) {
+        this.name = name;
+        this.address = address;
+    }
 
     public Restaurant(long id, String name, String address) {
         this.id = id;
@@ -27,6 +34,10 @@ public class Restaurant {
     }
     public String getAddress() {
         return address;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 
     /*public String getEmail() {
